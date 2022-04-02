@@ -17,27 +17,27 @@ $container-max-width: 1344px + (2 * $gap) !default;
   }
 }
 
-.container {
+.#{$prefix}-container {
   @include container-style;
   max-width: none !important;
 }
 
-.container-sm {
+.#{$prefix}-container-sm {
   @include container-style;
   max-width: min($container-sm, $container-max-width) - $container-offset;
 }
 
-.container-md {
+.#{$prefix}-container-md {
   @include container-style;
   max-width: min($container-md, $container-max-width) - $container-offset;
 }
 
-.container-lg {
+.#{$prefix}-container-lg {
   @include container-style;
   max-width: min($container-lg, $container-max-width) - $container-offset;
 }
 
-.container-xl {
+.#{$prefix}-container-xl {
   @include container-style;
   max-width: min($container-xl, $container-max-width) - $container-offset;
 }

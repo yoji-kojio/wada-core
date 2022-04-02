@@ -7,10 +7,9 @@ $prefix: 'wd';
 
 // Breakpoints
 $screen-mobile: 0 !default;
-$screen-landscape: 576px !default;
 $screen-tablet: 768px !default;
-$screen-laptop: 992px !default;
-$screen-desktop: 1200px !default;
+$screen-desktop: 992px !default;
+$screen-desktop-lg: 1200px !default;
 
 // Reponsiveness
 $gap: 32px !default;

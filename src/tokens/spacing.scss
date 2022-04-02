@@ -4,6 +4,7 @@
 
 $availableSpacing: 1, 2, 3, 4, 5, 6, 8, 10, 12, 16, 20, 24, 32, 40, 48, 56, 64;
 
+// General purpose spacings
 $space-1: rem(4);
 $space-2: rem(8);
 $space-3: rem(12);
@@ -21,3 +22,10 @@ $space-40: rem(160);
 $space-48: rem(192);
 $space-56: rem(224);
 $space-64: rem(256);
+
+// Layout spacing
+$space-xs: 4px;
+$space-sm: 8px;
+$space-md: 16px;
+$space-lg: 24px;
+$pace-xl: 32px;

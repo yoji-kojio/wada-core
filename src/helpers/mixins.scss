@@ -4,26 +4,20 @@
   }
 }
 
-@mixin landscape {
-  @media (min-width: $screen-landscape) {
-    @content;
-  }
-}
-
 @mixin tablet {
   @media (min-width: $screen-tablet) {
     @content;
   }
 }
 
-@mixin laptop {
-  @media (min-width: $screen-laptop) {
+@mixin desktop {
+  @media (min-width: $screen-desktop) {
     @content;
   }
 }
 
-@mixin desktop {
-  @media (min-width: $screen-desktop) {
+@mixin desktop-lg {
+  @media (min-width: $screen-desktop-lg) {
     @content;
   }
 }

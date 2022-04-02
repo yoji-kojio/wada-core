@@ -6,56 +6,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/index.css">
   <title>WadaDS | Personal Design System</title>
+
+  <style>
+    .card {
+      border: 2px solid #262626; display: flex; align-items: center; justify-content: center;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <div class="row">
-      <div style="background-color: red;" class="col-3-desktop col-5-mobile">OIE</div>
-      <div style="background-color: blue;" class="col-3-desktop col-7-mobile">OIE</div>
-      <div style="background-color: green;" class="col-3-desktop col-6-mobile">OIE OIE OIE OIEOIE OIE OIE OIEOIE OIE OIE OIEOIE OIE OIE OIE</div>
-      <div style="background-color: yellow;" class="col-3-desktop col-6-mobile">OIE</div>
+  <div class="wd-container-md">
+    <h1 class="wd-display-lg" style="text-align: center;">Grid System</h1>
+
+    <div class="wd-auto-row mt-8">
+      <div class="card">auto-column</div>
+      <div class="card">auto-column</div>
+      <div class="card">auto-column</div>
+      <div class="card">auto-column</div>
     </div>
 
-    <div class="row-auto-column mt-20">
-      <div style="background-color: red;">OIE</div>
-      <div style="background-color: blue;">OIE</div>
-      <div style="background-color: green;">OIE OIE OIE OIEOIE OIE OIE OIEOIE OIE OIE OIEOIE OIE OIE OIE</div>
-      <div style="background-color: yellow;">OIE</div>
+    <div class="wd-auto-row-sm mt-32">
+      <div class="card">auto-column 128px</div>
+      <div class="card">auto-column 128px</div>
+      <div class="card">auto-column 128px</div>
+      <div class="card">auto-column 128px</div>
     </div>
 
-    <div class="row-auto-column-xs mt-20">
-      <div style="background-color: red;">OIE</div>
-      <div style="background-color: blue;">OIE</div>
-      <div style="background-color: green;">OIE OIE OIE OIEOIE OIE OIE OIEOIE OIE OIE OIEOIE OIE OIE OIE</div>
-      <div style="background-color: yellow;">OIE</div>
+    <div class="wd-row mt-32">
+      <div class="card wd-col-3-desktop wd-col-6-tablet wd-col-12-mobile">column</div>
+      <div class="card wd-col-3-desktop wd-col-6-tablet wd-col-12-mobile">column</div>
+      <div class="card wd-col-3-desktop wd-col-6-tablet wd-col-12-mobile">column</div>
+      <div class="card wd-col-3-desktop wd-col-6-tablet wd-col-12-mobile">column</div>
     </div>
 
-    <div class="row-auto-column-sm mt-20">
-      <div style="background-color: red;">OIE</div>
-      <div style="background-color: blue;">OIE</div>
-      <div style="background-color: green;">OIE OIE OIE OIEOIE OIE OIE OIEOIE OIE OIE OIEOIE OIE OIE OIE</div>
-      <div style="background-color: yellow;">OIE</div>
-    </div>
-
-    <div class="row-auto-column-md mt-20">
-      <div style="background-color: red;">OIE</div>
-      <div style="background-color: blue;">OIE</div>
-      <div style="background-color: green;">OIE OIE OIE OIEOIE OIE OIE OIEOIE OIE OIE OIEOIE OIE OIE OIE</div>
-      <div style="background-color: yellow;">OIE</div>
-    </div>
-
-    <div class="row-auto-column-lg mt-20">
-      <div style="background-color: red;">OIE</div>
-      <div style="background-color: blue;">OIE</div>
-      <div style="background-color: green;">OIE OIE OIE OIEOIE OIE OIE OIEOIE OIE OIE OIEOIE OIE OIE OIE</div>
-      <div style="background-color: yellow;">OIE</div>
-    </div>
-
-    <div class="row-auto-column-xl mt-20">
-      <div style="background-color: red;">OIE</div>
-      <div style="background-color: blue;">OIE</div>
-      <div style="background-color: green;">OIE OIE OIE OIEOIE OIE OIE OIEOIE OIE OIE OIEOIE OIE OIE OIE</div>
-      <div style="background-color: yellow;">OIE</div>
+    <div class="wd-row mt-32">
+      <div class="card wd-col-8-desktop wd-col-4-tablet wd-col-6-mobile">column</div>
+      <div class="card wd-col-4-desktop wd-col-4-tablet wd-col-6-mobile">column</div>
+      <div class="card wd-col-3-desktop wd-col-4-tablet wd-col-6-mobile">column</div>
+      <div class="card wd-col-9-desktop wd-col-12-tablet wd-col-6-mobile">column</div>
     </div>
   </div>
 </body>

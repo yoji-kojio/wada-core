@@ -7,7 +7,7 @@ $auto-column-min-width: (
   xl: 25rem,
 );
 
-@mixin auto-column($min-width) {
+@mixin auto-column-width($min-width) {
   display: grid;
   gap: $gap-mobile;
   grid-template-columns: repeat(auto-fit, minmax($min-width, 1fr));
@@ -17,7 +17,7 @@ $auto-column-min-width: (
   }
 }
 
-.row {
+.#{$prefix}-row {
   display: grid;
   gap: $gap-mobile;
   grid-template-columns: repeat($grid-columns, 1fr);
@@ -31,13 +31,13 @@ $auto-column-min-width: (
   }
 }
 
-.row-auto-column {
-  @include auto-column(0);
+.#{$prefix}-auto-row {
+  @include auto-column-width(0);
 }
 
 @each $size, $value in $auto-column-min-width {
-  .row-auto-column-#{$size} {
-    @include auto-column($value);
+  .#{$prefix}-auto-row-#{$size} {
+    @include auto-column-width($value);
   }
 }
 
@@ -45,7 +45,7 @@ $auto-column-min-width: (
   @for $i from 1 through $grid-columns {
     $calculatedWidth: ($i * 100%) / $grid-columns;
 
-    .col-#{$i}-mobile {
+    .#{$prefix}-col-#{$i}-mobile {
       grid-column-end: span #{$i};
     }
   }
@@ -55,17 +55,7 @@ $auto-column-min-width: (
   @for $i from 1 through $grid-columns {
     $calculatedWidth: ($i * 100%) / $grid-columns;
 
-    .col-#{$i}-tablet {
-      grid-column-end: span #{$i};
-    }
-  }
-}
-
-@include laptop {
-  @for $i from 1 through $grid-columns {
-    $calculatedWidth: ($i * 100%) / $grid-columns;
-
-    .col-#{$i}-laptop {
+    .#{$prefix}-col-#{$i}-tablet {
       grid-column-end: span #{$i};
     }
   }
@@ -75,7 +65,17 @@ $auto-column-min-width: (
   @for $i from 1 through $grid-columns {
     $calculatedWidth: ($i * 100%) / $grid-columns;
 
-    .col-#{$i}-desktop {
+    .#{$prefix}-col-#{$i}-desktop {
+      grid-column-end: span #{$i};
+    }
+  }
+}
+
+@include desktop-lg {
+  @for $i from 1 through $grid-columns {
+    $calculatedWidth: ($i * 100%) / $grid-columns;
+
+    .#{$prefix}-col-#{$i}-desktop-lg {
       grid-column-end: span #{$i};
     }
   }
