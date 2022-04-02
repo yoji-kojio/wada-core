@@ -1,8 +1,44 @@
-$grid-columns: 12;
+$grid-columns: 12 !default;
+$auto-column-min-width: (
+  xs: 8rem,
+  sm: 10rem,
+  md: 15rem,
+  lg: 20rem,
+  xl: 25rem,
+);
+
+@mixin auto-column($min-width) {
+  display: grid;
+  gap: $gap-mobile;
+  grid-template-columns: repeat(auto-fit, minmax($min-width, 1fr));
+
+  @media (min-width: $screen-tablet) {
+    gap: $gap;
+  }
+}
 
 .row {
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
+  gap: $gap-mobile;
+  grid-template-columns: repeat($grid-columns, 1fr);
+
+  > * {
+    grid-column-end: span $grid-columns;
+  }
+
+  @media (min-width: $screen-tablet) {
+    gap: $gap;
+  }
+}
+
+.row-auto-column {
+  @include auto-column(0);
+}
+
+@each $size, $value in $auto-column-min-width {
+  .row-auto-column-#{$size} {
+    @include auto-column($value);
+  }
 }
 
 @include mobile {
@@ -10,8 +46,7 @@ $grid-columns: 12;
     $calculatedWidth: ($i * 100%) / $grid-columns;
 
     .col-#{$i}-mobile {
-      flex-grow: 0;
-      width: $calculatedWidth;
+      grid-column-end: span #{$i};
     }
   }
 }
@@ -21,8 +56,7 @@ $grid-columns: 12;
     $calculatedWidth: ($i * 100%) / $grid-columns;
 
     .col-#{$i}-tablet {
-      flex-grow: 0;
-      width: $calculatedWidth;
+      grid-column-end: span #{$i};
     }
   }
 }
@@ -32,8 +66,7 @@ $grid-columns: 12;
     $calculatedWidth: ($i * 100%) / $grid-columns;
 
     .col-#{$i}-laptop {
-      flex-grow: 0;
-      width: $calculatedWidth;
+      grid-column-end: span #{$i};
     }
   }
 }
@@ -43,8 +76,7 @@ $grid-columns: 12;
     $calculatedWidth: ($i * 100%) / $grid-columns;
 
     .col-#{$i}-desktop {
-      flex-grow: 0;
-      width: $calculatedWidth;
+      grid-column-end: span #{$i};
     }
   }
 }

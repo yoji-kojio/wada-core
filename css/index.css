@@ -861,211 +861,246 @@ textarea {
 }
 
 .row {
-  display: flex;
-  flex-flow: row wrap;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.row > * {
+  grid-column-end: span 12;
+}
+
+@media (min-width: 768px) {
+  .row {
+    gap: 32px;
+  }
+}
+
+.row-auto-column {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+}
+
+@media (min-width: 768px) {
+  .row-auto-column {
+    gap: 32px;
+  }
+}
+
+.row-auto-column-xs {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+}
+
+@media (min-width: 768px) {
+  .row-auto-column-xs {
+    gap: 32px;
+  }
+}
+
+.row-auto-column-sm {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+
+@media (min-width: 768px) {
+  .row-auto-column-sm {
+    gap: 32px;
+  }
+}
+
+.row-auto-column-md {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+@media (min-width: 768px) {
+  .row-auto-column-md {
+    gap: 32px;
+  }
+}
+
+.row-auto-column-lg {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+@media (min-width: 768px) {
+  .row-auto-column-lg {
+    gap: 32px;
+  }
+}
+
+.row-auto-column-xl {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
+
+@media (min-width: 768px) {
+  .row-auto-column-xl {
+    gap: 32px;
+  }
 }
 
 @media (min-width: 0) {
   .col-1-mobile {
-    flex-grow: 0;
-    width: 8.33333%;
+    grid-column-end: span 1;
   }
   .col-2-mobile {
-    flex-grow: 0;
-    width: 16.66667%;
+    grid-column-end: span 2;
   }
   .col-3-mobile {
-    flex-grow: 0;
-    width: 25%;
+    grid-column-end: span 3;
   }
   .col-4-mobile {
-    flex-grow: 0;
-    width: 33.33333%;
+    grid-column-end: span 4;
   }
   .col-5-mobile {
-    flex-grow: 0;
-    width: 41.66667%;
+    grid-column-end: span 5;
   }
   .col-6-mobile {
-    flex-grow: 0;
-    width: 50%;
+    grid-column-end: span 6;
   }
   .col-7-mobile {
-    flex-grow: 0;
-    width: 58.33333%;
+    grid-column-end: span 7;
   }
   .col-8-mobile {
-    flex-grow: 0;
-    width: 66.66667%;
+    grid-column-end: span 8;
   }
   .col-9-mobile {
-    flex-grow: 0;
-    width: 75%;
+    grid-column-end: span 9;
   }
   .col-10-mobile {
-    flex-grow: 0;
-    width: 83.33333%;
+    grid-column-end: span 10;
   }
   .col-11-mobile {
-    flex-grow: 0;
-    width: 91.66667%;
+    grid-column-end: span 11;
   }
   .col-12-mobile {
-    flex-grow: 0;
-    width: 100%;
+    grid-column-end: span 12;
   }
 }
 
 @media (min-width: 768px) {
   .col-1-tablet {
-    flex-grow: 0;
-    width: 8.33333%;
+    grid-column-end: span 1;
   }
   .col-2-tablet {
-    flex-grow: 0;
-    width: 16.66667%;
+    grid-column-end: span 2;
   }
   .col-3-tablet {
-    flex-grow: 0;
-    width: 25%;
+    grid-column-end: span 3;
   }
   .col-4-tablet {
-    flex-grow: 0;
-    width: 33.33333%;
+    grid-column-end: span 4;
   }
   .col-5-tablet {
-    flex-grow: 0;
-    width: 41.66667%;
+    grid-column-end: span 5;
   }
   .col-6-tablet {
-    flex-grow: 0;
-    width: 50%;
+    grid-column-end: span 6;
   }
   .col-7-tablet {
-    flex-grow: 0;
-    width: 58.33333%;
+    grid-column-end: span 7;
   }
   .col-8-tablet {
-    flex-grow: 0;
-    width: 66.66667%;
+    grid-column-end: span 8;
   }
   .col-9-tablet {
-    flex-grow: 0;
-    width: 75%;
+    grid-column-end: span 9;
   }
   .col-10-tablet {
-    flex-grow: 0;
-    width: 83.33333%;
+    grid-column-end: span 10;
   }
   .col-11-tablet {
-    flex-grow: 0;
-    width: 91.66667%;
+    grid-column-end: span 11;
   }
   .col-12-tablet {
-    flex-grow: 0;
-    width: 100%;
+    grid-column-end: span 12;
   }
 }
 
 @media (min-width: 992px) {
   .col-1-laptop {
-    flex-grow: 0;
-    width: 8.33333%;
+    grid-column-end: span 1;
   }
   .col-2-laptop {
-    flex-grow: 0;
-    width: 16.66667%;
+    grid-column-end: span 2;
   }
   .col-3-laptop {
-    flex-grow: 0;
-    width: 25%;
+    grid-column-end: span 3;
   }
   .col-4-laptop {
-    flex-grow: 0;
-    width: 33.33333%;
+    grid-column-end: span 4;
   }
   .col-5-laptop {
-    flex-grow: 0;
-    width: 41.66667%;
+    grid-column-end: span 5;
   }
   .col-6-laptop {
-    flex-grow: 0;
-    width: 50%;
+    grid-column-end: span 6;
   }
   .col-7-laptop {
-    flex-grow: 0;
-    width: 58.33333%;
+    grid-column-end: span 7;
   }
   .col-8-laptop {
-    flex-grow: 0;
-    width: 66.66667%;
+    grid-column-end: span 8;
   }
   .col-9-laptop {
-    flex-grow: 0;
-    width: 75%;
+    grid-column-end: span 9;
   }
   .col-10-laptop {
-    flex-grow: 0;
-    width: 83.33333%;
+    grid-column-end: span 10;
   }
   .col-11-laptop {
-    flex-grow: 0;
-    width: 91.66667%;
+    grid-column-end: span 11;
   }
   .col-12-laptop {
-    flex-grow: 0;
-    width: 100%;
+    grid-column-end: span 12;
   }
 }
 
 @media (min-width: 1200px) {
   .col-1-desktop {
-    flex-grow: 0;
-    width: 8.33333%;
+    grid-column-end: span 1;
   }
   .col-2-desktop {
-    flex-grow: 0;
-    width: 16.66667%;
+    grid-column-end: span 2;
   }
   .col-3-desktop {
-    flex-grow: 0;
-    width: 25%;
+    grid-column-end: span 3;
   }
   .col-4-desktop {
-    flex-grow: 0;
-    width: 33.33333%;
+    grid-column-end: span 4;
   }
   .col-5-desktop {
-    flex-grow: 0;
-    width: 41.66667%;
+    grid-column-end: span 5;
   }
   .col-6-desktop {
-    flex-grow: 0;
-    width: 50%;
+    grid-column-end: span 6;
   }
   .col-7-desktop {
-    flex-grow: 0;
-    width: 58.33333%;
+    grid-column-end: span 7;
   }
   .col-8-desktop {
-    flex-grow: 0;
-    width: 66.66667%;
+    grid-column-end: span 8;
   }
   .col-9-desktop {
-    flex-grow: 0;
-    width: 75%;
+    grid-column-end: span 9;
   }
   .col-10-desktop {
-    flex-grow: 0;
-    width: 83.33333%;
+    grid-column-end: span 10;
   }
   .col-11-desktop {
-    flex-grow: 0;
-    width: 91.66667%;
+    grid-column-end: span 11;
   }
   .col-12-desktop {
-    flex-grow: 0;
-    width: 100%;
+    grid-column-end: span 12;
   }
 }
 
