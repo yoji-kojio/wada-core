@@ -1,0 +1,9 @@
+# Files
+
+.DS_Store
+index.html
+
+# Folders
+
+.sass-cache
+node_modules
