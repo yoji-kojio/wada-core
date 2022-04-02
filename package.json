@@ -2,12 +2,12 @@
   "name": "wada-core",
   "version": "1.0.0",
   "description": "CSS Library for WadaDS",
-  "main": "index.scss",
+  "main": "wada.scss",
   "scripts": {
     "build": "rimraf css && npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
-    "build-sass": "node-sass --output-style expanded src/index.scss ./css/index.css",
-    "build-autoprefix": "postcss --use autoprefixer --map --output ./css/index.css ./css/index.css",
-    "build-cleancss": "cleancss -o ./css/index.min.css ./css/index.css"
+    "build-sass": "node-sass --output-style expanded src/wada.scss ./css/wada.css",
+    "build-autoprefix": "postcss --use autoprefixer --map --output ./css/wada.css ./css/wada.css",
+    "build-cleancss": "cleancss -o ./css/wada.min.css ./css/wada.css"
   },
   "files": [
     "css"
