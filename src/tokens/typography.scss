@@ -1,0 +1,47 @@
+// ============================================================
+// Tokens » Typography
+// ============================================================
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$font-family: 'Inter', sans-serif !default;
+
+// Font Size
+
+// Display
+$display-font-size-2xl: rem(72);
+$display-font-size-xl: rem(60);
+$display-font-size-lg: rem(48);
+$display-font-size-md: rem(36);
+$display-font-size-sm: rem(30);
+$display-font-size-xs: rem(24);
+
+// Text
+$text-font-size-xl: rem(20);
+$text-font-size-lg: rem(18);
+$text-font-size-md: rem(16);
+$text-font-size-sm: rem(14);
+$text-font-size-xs: rem(12);
+
+// Line Height
+
+// Display
+$display-line-height-2xl: rem(90);
+$display-line-height-xl: rem(72);
+$display-line-height-lg: rem(60);
+$display-line-height-md: rem(44);
+$display-line-height-sm: rem(38);
+$display-line-height-xs: rem(32);
+
+// Text
+$text-line-height-xl: rem(30);
+$text-line-height-lg: rem(28);
+$text-line-height-md: rem(24);
+$text-line-height-sm: rem(20);
+$text-line-height-xs: rem(18);
+
+// Font Weight
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;

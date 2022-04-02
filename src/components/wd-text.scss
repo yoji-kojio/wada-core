@@ -1,0 +1,44 @@
+// ============================================================
+// Components » Text
+// ============================================================
+
+$sizes: (
+  xs: (
+    font-size: $text-font-size-xs,
+    line-height: $text-line-height-xs
+  ),
+  sm: (
+    font-size: $text-font-size-sm,
+    line-height: $text-line-height-sm
+  ),
+  md: (
+    font-size: $text-font-size-md,
+    line-height: $text-line-height-md
+  ),
+  lg: (
+    font-size: $text-font-size-lg,
+    line-height: $text-line-height-lg
+  ),
+  xl: (
+    font-size: $text-font-size-xl,
+    line-height: $text-line-height-xl
+  ),
+);
+
+.#{$prefix}-text {
+  color: $gray-900;
+  font-size: $text-font-size-md;
+  line-height: $text-line-height-md;
+  font-weight: $font-weight-regular;
+}
+
+// Sizes
+@each $size, $config in $sizes {
+  .#{$prefix}-text-#{$size} {
+    $text-font-size: map-get($config, "font-size");
+    $text-line-height: map-get($config, "line-height");
+
+    font-size: $text-font-size;
+    line-height: $text-line-height;
+  }
+}

@@ -1,0 +1,36 @@
+$body-family: $font-family;
+$body-overflow-x: hidden !default;
+$body-overflow-y: scroll !default;
+$body-rendering: optimizeLegibility !default;
+$html-size: 16px !default;
+$body-font-size: $text-font-size-md !default;
+$body-weight: $font-weight-regular !default;
+$body-line-height: $text-line-height-md !default;
+$body-color: $gray-900 !default;
+
+html {
+  font-size: $html-size;
+  font-family: $body-family;
+  overflow-x: $body-overflow-x;
+  overflow-y: $body-overflow-y;
+  text-rendering: $body-rendering;
+  text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  color: $body-color;
+  font-size: $body-font-size;
+  font-weight: $body-weight;
+  line-height: $body-line-height;
+}
+
+body,
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: $body-family;
+}

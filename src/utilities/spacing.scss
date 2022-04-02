@@ -1,0 +1,47 @@
+// ============================================================
+// Utilities » Spacing
+// ============================================================
+
+@each $space in $availableSpacing {
+  $calculatedSpace: rem($space * 4);
+
+  .m-#{$space} {
+    margin: $calculatedSpace;
+  }
+
+  .mt-#{$space} {
+    margin-top: $calculatedSpace;
+  }
+
+  .mb-#{$space} {
+    margin-bottom: $calculatedSpace;
+  }
+
+  .mr-#{$space} {
+    margin-right: $calculatedSpace;
+  }
+
+  .ml-#{$space} {
+    margin-left: $calculatedSpace;
+  }
+
+  .p-#{$space} {
+    margin: $calculatedSpace;
+  }
+
+  .pt-#{$space} {
+    padding-top: $calculatedSpace;
+  }
+
+  .pb-#{$space} {
+    padding-bottom: $calculatedSpace;
+  }
+
+  .pr-#{$space} {
+    padding-right: $calculatedSpace;
+  }
+
+  .pl-#{$space} {
+    padding-left: $calculatedSpace;
+  }
+}

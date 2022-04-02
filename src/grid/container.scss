@@ -1,0 +1,43 @@
+// ============================================================
+// Components » Container
+// ============================================================
+
+$container-offset: (2 * $gap) !default;
+$container-max-width: 1344px + (2 * $gap) !default;
+
+@mixin container-style {
+  margin: 0 auto;
+  width: 100%;
+  padding-left: $gap-mobile;
+  padding-right: $gap-mobile;
+
+  @media (min-width: $screen-tablet) {
+    padding-left: $gap;
+    padding-right: $gap;
+  }
+}
+
+.container {
+  @include container-style;
+  max-width: none !important;
+}
+
+.container-sm {
+  @include container-style;
+  max-width: min($container-sm, $container-max-width) - $container-offset;
+}
+
+.container-md {
+  @include container-style;
+  max-width: min($container-md, $container-max-width) - $container-offset;
+}
+
+.container-lg {
+  @include container-style;
+  max-width: min($container-lg, $container-max-width) - $container-offset;
+}
+
+.container-xl {
+  @include container-style;
+  max-width: min($container-xl, $container-max-width) - $container-offset;
+}

@@ -1,0 +1,23 @@
+// ============================================================
+// Utilities » Variables
+// ============================================================
+
+// Prefix
+$prefix: 'wd';
+
+// Breakpoints
+$screen-mobile: 0 !default;
+$screen-landscape: 576px !default;
+$screen-tablet: 768px !default;
+$screen-laptop: 992px !default;
+$screen-desktop: 1200px !default;
+
+// Reponsiveness
+$gap: 32px !default;
+$gap-mobile: 16px !default;
+
+// Containers
+$container-sm: 640px;
+$container-md: 768px;
+$container-lg: 1024px;
+$container-xl: 1280px;

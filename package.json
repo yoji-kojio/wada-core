@@ -1,0 +1,24 @@
+{
+  "name": "wada-core",
+  "version": "1.0.0",
+  "description": "CSS Library for WadaDS",
+  "main": "index.scss",
+  "scripts": {
+    "build": "rimraf css && npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
+    "build-sass": "node-sass --output-style expanded src/index.scss ./css/index.css",
+    "build-autoprefix": "postcss --use autoprefixer --map --output ./css/index.css ./css/index.css",
+    "build-cleancss": "cleancss -o ./css/index.min.css ./css/index.css"
+  },
+  "files": [
+    "css"
+  ],
+  "author": "Yoji Kojio",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.4",
+    "clean-css-cli": "^5.6.0",
+    "node-sass": "^7.0.1",
+    "postcss-cli": "^9.1.0",
+    "rimraf": "^3.0.2"
+  }
+}

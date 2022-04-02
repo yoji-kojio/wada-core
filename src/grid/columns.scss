@@ -1,0 +1,50 @@
+$grid-columns: 12;
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+@include mobile {
+  @for $i from 1 through $grid-columns {
+    $calculatedWidth: ($i * 100%) / $grid-columns;
+
+    .col-#{$i}-mobile {
+      flex-grow: 0;
+      width: $calculatedWidth;
+    }
+  }
+}
+
+@include tablet {
+  @for $i from 1 through $grid-columns {
+    $calculatedWidth: ($i * 100%) / $grid-columns;
+
+    .col-#{$i}-tablet {
+      flex-grow: 0;
+      width: $calculatedWidth;
+    }
+  }
+}
+
+@include laptop {
+  @for $i from 1 through $grid-columns {
+    $calculatedWidth: ($i * 100%) / $grid-columns;
+
+    .col-#{$i}-laptop {
+      flex-grow: 0;
+      width: $calculatedWidth;
+    }
+  }
+}
+
+@include desktop {
+  @for $i from 1 through $grid-columns {
+    $calculatedWidth: ($i * 100%) / $grid-columns;
+
+    .col-#{$i}-desktop {
+      flex-grow: 0;
+      width: $calculatedWidth;
+    }
+  }
+}

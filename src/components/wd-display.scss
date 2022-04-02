@@ -1,0 +1,48 @@
+// ============================================================
+// Components » Display
+// ============================================================
+
+$sizes: (
+  xs: (
+    font-size: $display-font-size-xs,
+    line-height: $display-line-height-xs
+  ),
+  sm: (
+    font-size: $display-font-size-sm,
+    line-height: $display-line-height-sm
+  ),
+  md: (
+    font-size: $display-font-size-md,
+    line-height: $display-line-height-md
+  ),
+  lg: (
+    font-size: $display-font-size-lg,
+    line-height: $display-line-height-lg
+  ),
+  xl: (
+    font-size: $display-font-size-xl,
+    line-height: $display-line-height-xl
+  ),
+  2xl: (
+    font-size: $display-font-size-2xl,
+    line-height: $display-line-height-2xl
+  ),
+);
+
+.#{$prefix}-display {
+  color: $gray-900;
+  font-size: $display-font-size-md;
+  line-height: $display-line-height-md;
+  font-weight: $font-weight-regular;
+}
+
+// Sizes
+@each $size, $config in $sizes {
+  .#{$prefix}-display-#{$size} {
+    $display-font-size: map-get($config, "font-size");
+    $display-line-height: map-get($config, "line-height");
+
+    font-size: $display-font-size;
+    line-height: $display-line-height;
+  }
+}
