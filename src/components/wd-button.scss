@@ -1,0 +1,274 @@
+// ============================================================
+// Components » Button
+// ============================================================
+
+$button-border-radius: 8px !default;
+
+$variant-colors: (
+  primary: (
+    default-background: $primary-600,
+    hover-background: $primary-700,
+    focus-background: $primary-600,
+    disabled-background: $primary-200,
+    outline-color: $primary-100,
+    default-text-color: $white,
+    disabled-text-color: $white,
+    border-color: $primary-600,
+    hover-border-color: $primary-700,
+    focus-border-color: $primary-600,
+    disabled-border-color: $primary-200,
+  ),
+  secondary: (
+    default-background: $primary-50,
+    hover-background: $primary-100,
+    focus-background: $primary-50,
+    disabled-background: $primary-25,
+    outline-color: $primary-100,
+    default-text-color: $primary-700,
+    disabled-text-color: $primary-300,
+    border-color: $primary-50,
+    hover-border-color: $primary-100,
+    focus-border-color: $primary-50,
+    disabled-border-color: $primary-25,
+  ),
+  secondary-gray: (
+    default-background: $white,
+    hover-background: $gray-50,
+    focus-background: $white,
+    disabled-background: $white,
+    outline-color: $gray-100,
+    default-text-color: $gray-700,
+    disabled-text-color: $gray-300,
+    hover-text-color: $gray-800,
+    border-color: $gray-300,
+    hover-border-color: $gray-300,
+    focus-border-color: $white,
+    disabled-border-color: $gray-200,
+  ),
+  tertiary: (
+    default-background: $white,
+    hover-background: $primary-50,
+    focus-background: $white,
+    disabled-background: $white,
+    outline-color: transparent,
+    default-text-color: $primary-700,
+    disabled-text-color: $gray-300,
+    border-color: transparent,
+    hover-border-color: $primary-50,
+    focus-border-color: $white,
+    disabled-border-color: transparent,
+    box-shadow: unset,
+  ),
+  tertiary-gray: (
+    default-background: $white,
+    hover-background: $gray-50,
+    focus-background: $white,
+    disabled-background: $white,
+    outline-color: transparent,
+    default-text-color: $gray-500,
+    disabled-text-color: $gray-300,
+    hover-text-color: $gray-600,
+    border-color: transparent,
+    hover-border-color: $primary-50,
+    focus-border-color: $white,
+    disabled-border-color: transparent,
+    box-shadow: unset,
+  ),
+  error-primary: (
+    default-background: $error-600,
+    hover-background: $error-700,
+    focus-background: $error-600,
+    disabled-background: $error-200,
+    outline-color: $error-100,
+    default-text-color: $white,
+    disabled-text-color: $white,
+    border-color: $error-600,
+    hover-border-color: $error-700,
+    focus-border-color: $error-600,
+    disabled-border-color: $error-200,
+  ),
+  error-secondary: (
+    default-background: $error-50,
+    hover-background: $error-100,
+    focus-background: $error-50,
+    disabled-background: $error-25,
+    outline-color: $error-100,
+    default-text-color: $error-700,
+    disabled-text-color: $error-300,
+    border-color: $error-50,
+    hover-border-color: $error-100,
+    focus-border-color: $error-50,
+    disabled-border-color: $error-25,
+  ),
+  warning-primary: (
+    default-background: $warning-300,
+    hover-background: $warning-400,
+    focus-background: $warning-300,
+    disabled-background: $warning-200,
+    outline-color: $warning-100,
+    default-text-color: $white,
+    disabled-text-color: $white,
+    border-color: $warning-300,
+    hover-border-color: $warning-400,
+    focus-border-color: $warning-300,
+    disabled-border-color: $warning-200,
+  ),
+  warning-secondary: (
+    default-background: $warning-50,
+    hover-background: $warning-100,
+    focus-background: $warning-50,
+    disabled-background: $warning-25,
+    outline-color: $warning-100,
+    default-text-color: $warning-700,
+    disabled-text-color: $warning-300,
+    border-color: $warning-50,
+    hover-border-color: $warning-100,
+    focus-border-color: $warning-50,
+    disabled-border-color: $warning-25,
+  ),
+  success-primary: (
+    default-background: $success-600,
+    hover-background: $success-700,
+    focus-background: $success-600,
+    disabled-background: $success-200,
+    outline-color: $success-100,
+    default-text-color: $white,
+    disabled-text-color: $white,
+    border-color: $success-600,
+    hover-border-color: $success-700,
+    focus-border-color: $success-600,
+    disabled-border-color: $success-200,
+  ),
+  success-secondary: (
+    default-background: $success-50,
+    hover-background: $success-100,
+    focus-background: $success-50,
+    disabled-background: $success-25,
+    outline-color: $success-100,
+    default-text-color: $success-700,
+    disabled-text-color: $success-300,
+    border-color: $success-50,
+    hover-border-color: $success-100,
+    focus-border-color: $success-50,
+    disabled-border-color: $success-25,
+  ),
+);
+
+$sizes: (
+  sm: (
+    font-size: $text-font-size-sm,
+    line-height: $text-line-height-sm,
+    padding: rem(8) rem(14)
+  ),
+  md: (
+    font-size: $text-font-size-sm,
+    line-height: $text-line-height-sm,
+    padding: rem(10) rem(16)
+  ),
+  lg: (
+    font-size: $text-font-size-md,
+    line-height: $text-line-height-md,
+    padding: rem(10) rem(18)
+  ),
+  xl: (
+    font-size: $text-font-size-md,
+    line-height: $text-line-height-md,
+    padding: rem(12) rem(20)
+  ),
+  2xl: (
+    font-size: $text-font-size-lg,
+    line-height: $text-line-height-lg,
+    padding: rem(16) rem(28)
+  ),
+);
+
+// Base
+
+.#{$prefix}-button {
+  align-items: center;
+  border: none;
+  border-radius: $button-border-radius;
+  cursor: pointer;
+  display: flex;
+  font-weight: $font-weight-medium;
+  line-height: $text-line-height-sm;
+  font-size: $text-font-size-sm;
+  box-shadow: $shadow-xs;
+  padding: rem(10) rem(16);
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  vertical-align: top;
+  height: fit-content;
+  width: fit-content;
+}
+
+// Variants
+@each $variant, $config in $variant-colors {
+  .#{$prefix}-button--#{$variant} {
+    $default-background: map-get($config, "default-background");
+    $default-text-color: map-get($config, "default-text-color");
+    $hover-background-color: map-get($config, "hover-background");
+    $focus-background-color: map-get($config, "focus-background");
+    $disabled-background-color: map-get($config, "disabled-background");
+    $outline-color: map-get($config, "outline-color");
+    $disabled-text-color: map-get($config, "disabled-text-color");
+    $hover-text-color: map-get($config, "hover-text-color");
+    $border-color: map-get($config, "border-color");
+    $hover-border-color: map-get($config, "hover-border-color");
+    $focus-border-color: map-get($config, "focus-border-color");
+    $disabled-border-color: map-get($config, "disabled-border-color");
+    $box-shadow: map-get($config, "box-shadow");
+
+    @if $box-shadow {
+      box-shadow: $box-shadow;
+    }
+
+    background: $default-background;
+    color: $default-text-color;
+    border: 1px solid $border-color;
+
+    &:hover {
+      @if $hover-text-color {
+        color: $hover-text-color;
+      }
+
+      background: $hover-background-color;
+      border: 1px solid $hover-border-color;
+    }
+
+    &:focus {
+      background: $focus-background-color;
+      border: 1px solid $focus-border-color;
+      outline: 4px solid $outline-color;
+    }
+
+    &.#{$prefix}-button--disabled {
+      pointer-events: none;
+      background: $disabled-background-color;
+      color: $disabled-text-color;
+      border: 1px solid $disabled-border-color;
+    }
+  }
+}
+
+// Sizes
+
+@each $size, $config in $sizes {
+  .#{$prefix}-button--#{$size} {
+    $button-font-size: map-get($config, "font-size");
+    $button-line-height: map-get($config, "line-height");
+    $button-padding: map-get($config, "padding");
+
+    font-size: $button-font-size;
+    line-height: $button-line-height;
+    padding: $button-padding;
+  }
+}
+
+// Behavior
+
+.#{$prefix}-button--block {
+  width: 100%;
+}

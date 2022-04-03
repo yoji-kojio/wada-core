@@ -276,6 +276,335 @@ textarea {
   font-weight: 700;
 }
 
+.wd-button {
+  align-items: center;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  font-weight: 500;
+  line-height: 1.25rem;
+  font-size: 0.875rem;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  padding: 0.625rem 1rem;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  vertical-align: top;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.wd-button--primary {
+  background: #7f56d9;
+  color: #ffffff;
+  border: 1px solid #7f56d9;
+}
+
+.wd-button--primary:hover {
+  background: #6941c6;
+  border: 1px solid #6941c6;
+}
+
+.wd-button--primary:focus {
+  background: #7f56d9;
+  border: 1px solid #7f56d9;
+  outline: 4px solid #f4ebff;
+}
+
+.wd-button--primary.wd-button--disabled {
+  pointer-events: none;
+  background: #e9d7fe;
+  color: #ffffff;
+  border: 1px solid #e9d7fe;
+}
+
+.wd-button--secondary {
+  background: #f9f5ff;
+  color: #6941c6;
+  border: 1px solid #f9f5ff;
+}
+
+.wd-button--secondary:hover {
+  background: #f4ebff;
+  border: 1px solid #f4ebff;
+}
+
+.wd-button--secondary:focus {
+  background: #f9f5ff;
+  border: 1px solid #f9f5ff;
+  outline: 4px solid #f4ebff;
+}
+
+.wd-button--secondary.wd-button--disabled {
+  pointer-events: none;
+  background: #fcfaff;
+  color: #d6bbfb;
+  border: 1px solid #fcfaff;
+}
+
+.wd-button--secondary-gray {
+  background: #ffffff;
+  color: #344054;
+  border: 1px solid #d0d5dd;
+}
+
+.wd-button--secondary-gray:hover {
+  color: #1d2939;
+  background: #f9fafb;
+  border: 1px solid #d0d5dd;
+}
+
+.wd-button--secondary-gray:focus {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  outline: 4px solid #f2f4f7;
+}
+
+.wd-button--secondary-gray.wd-button--disabled {
+  pointer-events: none;
+  background: #ffffff;
+  color: #d0d5dd;
+  border: 1px solid #eaecf0;
+}
+
+.wd-button--tertiary {
+  box-shadow: unset;
+  background: #ffffff;
+  color: #6941c6;
+  border: 1px solid transparent;
+}
+
+.wd-button--tertiary:hover {
+  background: #f9f5ff;
+  border: 1px solid #f9f5ff;
+}
+
+.wd-button--tertiary:focus {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  outline: 4px solid transparent;
+}
+
+.wd-button--tertiary.wd-button--disabled {
+  pointer-events: none;
+  background: #ffffff;
+  color: #d0d5dd;
+  border: 1px solid transparent;
+}
+
+.wd-button--tertiary-gray {
+  box-shadow: unset;
+  background: #ffffff;
+  color: #667085;
+  border: 1px solid transparent;
+}
+
+.wd-button--tertiary-gray:hover {
+  color: #475467;
+  background: #f9fafb;
+  border: 1px solid #f9f5ff;
+}
+
+.wd-button--tertiary-gray:focus {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  outline: 4px solid transparent;
+}
+
+.wd-button--tertiary-gray.wd-button--disabled {
+  pointer-events: none;
+  background: #ffffff;
+  color: #d0d5dd;
+  border: 1px solid transparent;
+}
+
+.wd-button--error-primary {
+  background: #d92d20;
+  color: #ffffff;
+  border: 1px solid #d92d20;
+}
+
+.wd-button--error-primary:hover {
+  background: #b42318;
+  border: 1px solid #b42318;
+}
+
+.wd-button--error-primary:focus {
+  background: #d92d20;
+  border: 1px solid #d92d20;
+  outline: 4px solid #fee4e2;
+}
+
+.wd-button--error-primary.wd-button--disabled {
+  pointer-events: none;
+  background: #fecdca;
+  color: #ffffff;
+  border: 1px solid #fecdca;
+}
+
+.wd-button--error-secondary {
+  background: #fef3f2;
+  color: #b42318;
+  border: 1px solid #fef3f2;
+}
+
+.wd-button--error-secondary:hover {
+  background: #fee4e2;
+  border: 1px solid #fee4e2;
+}
+
+.wd-button--error-secondary:focus {
+  background: #fef3f2;
+  border: 1px solid #fef3f2;
+  outline: 4px solid #fee4e2;
+}
+
+.wd-button--error-secondary.wd-button--disabled {
+  pointer-events: none;
+  background: #fffbfa;
+  color: #fda29b;
+  border: 1px solid #fffbfa;
+}
+
+.wd-button--warning-primary {
+  background: #fec84b;
+  color: #ffffff;
+  border: 1px solid #fec84b;
+}
+
+.wd-button--warning-primary:hover {
+  background: #fdb022;
+  border: 1px solid #fdb022;
+}
+
+.wd-button--warning-primary:focus {
+  background: #fec84b;
+  border: 1px solid #fec84b;
+  outline: 4px solid #fef0c7;
+}
+
+.wd-button--warning-primary.wd-button--disabled {
+  pointer-events: none;
+  background: #fedf89;
+  color: #ffffff;
+  border: 1px solid #fedf89;
+}
+
+.wd-button--warning-secondary {
+  background: #fffaeb;
+  color: #b54708;
+  border: 1px solid #fffaeb;
+}
+
+.wd-button--warning-secondary:hover {
+  background: #fef0c7;
+  border: 1px solid #fef0c7;
+}
+
+.wd-button--warning-secondary:focus {
+  background: #fffaeb;
+  border: 1px solid #fffaeb;
+  outline: 4px solid #fef0c7;
+}
+
+.wd-button--warning-secondary.wd-button--disabled {
+  pointer-events: none;
+  background: #fffcf5;
+  color: #fec84b;
+  border: 1px solid #fffcf5;
+}
+
+.wd-button--success-primary {
+  background: #039855;
+  color: #ffffff;
+  border: 1px solid #039855;
+}
+
+.wd-button--success-primary:hover {
+  background: #027a48;
+  border: 1px solid #027a48;
+}
+
+.wd-button--success-primary:focus {
+  background: #039855;
+  border: 1px solid #039855;
+  outline: 4px solid #d1fadf;
+}
+
+.wd-button--success-primary.wd-button--disabled {
+  pointer-events: none;
+  background: #a6f4c5;
+  color: #ffffff;
+  border: 1px solid #a6f4c5;
+}
+
+.wd-button--success-secondary {
+  background: #ecfdf3;
+  color: #027a48;
+  border: 1px solid #ecfdf3;
+}
+
+.wd-button--success-secondary:hover {
+  background: #d1fadf;
+  border: 1px solid #d1fadf;
+}
+
+.wd-button--success-secondary:focus {
+  background: #ecfdf3;
+  border: 1px solid #ecfdf3;
+  outline: 4px solid #d1fadf;
+}
+
+.wd-button--success-secondary.wd-button--disabled {
+  pointer-events: none;
+  background: #f6fef9;
+  color: #6ce9a6;
+  border: 1px solid #f6fef9;
+}
+
+.wd-button--sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding: 0.5rem 0.875rem;
+}
+
+.wd-button--md {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding: 0.625rem 1rem;
+}
+
+.wd-button--lg {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 0.625rem 1.125rem;
+}
+
+.wd-button--xl {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 0.75rem 1.25rem;
+}
+
+.wd-button--2xl {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  padding: 1rem 1.75rem;
+}
+
+.wd-button--block {
+  width: 100%;
+}
+
 .m-1 {
   margin: 0.25rem;
 }
