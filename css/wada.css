@@ -380,7 +380,7 @@ textarea {
   box-shadow: unset;
   background: #ffffff;
   color: #6941c6;
-  border: 1px solid transparent;
+  border: 1px solid #ffffff;
 }
 
 .wd-button--tertiary:hover {
@@ -398,20 +398,20 @@ textarea {
   pointer-events: none;
   background: #ffffff;
   color: #d0d5dd;
-  border: 1px solid transparent;
+  border: 1px solid #ffffff;
 }
 
 .wd-button--tertiary-gray {
   box-shadow: unset;
   background: #ffffff;
   color: #667085;
-  border: 1px solid transparent;
+  border: 1px solid #ffffff;
 }
 
 .wd-button--tertiary-gray:hover {
   color: #475467;
   background: #f9fafb;
-  border: 1px solid #f9f5ff;
+  border: 1px solid #f9fafb;
 }
 
 .wd-button--tertiary-gray:focus {
@@ -424,7 +424,7 @@ textarea {
   pointer-events: none;
   background: #ffffff;
   color: #d0d5dd;
-  border: 1px solid transparent;
+  border: 1px solid #ffffff;
 }
 
 .wd-button--error-primary {
@@ -475,6 +475,57 @@ textarea {
   border: 1px solid #fffbfa;
 }
 
+.wd-button--error-tertiary {
+  box-shadow: unset;
+  background: #ffffff;
+  color: #b42318;
+  border: 1px solid #ffffff;
+}
+
+.wd-button--error-tertiary:hover {
+  color: #912018;
+  background: #fef3f2;
+  border: 1px solid #fef3f2;
+}
+
+.wd-button--error-tertiary:focus {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  outline: 4px solid transparent;
+}
+
+.wd-button--error-tertiary.wd-button--disabled {
+  pointer-events: none;
+  background: #ffffff;
+  color: #fda29b;
+  border: 1px solid #ffffff;
+}
+
+.wd-button--error-outline {
+  background: #ffffff;
+  color: #b42318;
+  border: 1px solid #fda29b;
+}
+
+.wd-button--error-outline:hover {
+  color: #912018;
+  background: #fef3f2;
+  border: 1px solid #fda29b;
+}
+
+.wd-button--error-outline:focus {
+  background: #ffffff;
+  border: 1px solid #fda29b;
+  outline: 4px solid #fee4e2;
+}
+
+.wd-button--error-outline.wd-button--disabled {
+  pointer-events: none;
+  background: #ffffff;
+  color: #fda29b;
+  border: 1px solid #fecdca;
+}
+
 .wd-button--warning-primary {
   background: #fec84b;
   color: #ffffff;
@@ -523,6 +574,57 @@ textarea {
   border: 1px solid #fffcf5;
 }
 
+.wd-button--warning-tertiary {
+  box-shadow: unset;
+  background: #ffffff;
+  color: #b54708;
+  border: 1px solid #ffffff;
+}
+
+.wd-button--warning-tertiary:hover {
+  color: #93370d;
+  background: #fffaeb;
+  border: 1px solid #fffaeb;
+}
+
+.wd-button--warning-tertiary:focus {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  outline: 4px solid transparent;
+}
+
+.wd-button--warning-tertiary.wd-button--disabled {
+  pointer-events: none;
+  background: #ffffff;
+  color: #fec84b;
+  border: 1px solid #ffffff;
+}
+
+.wd-button--warning-outline {
+  background: #ffffff;
+  color: #b54708;
+  border: 1px solid #fec84b;
+}
+
+.wd-button--warning-outline:hover {
+  color: #93370d;
+  background: #fffaeb;
+  border: 1px solid #fec84b;
+}
+
+.wd-button--warning-outline:focus {
+  background: #ffffff;
+  border: 1px solid #fec84b;
+  outline: 4px solid #fef0c7;
+}
+
+.wd-button--warning-outline.wd-button--disabled {
+  pointer-events: none;
+  background: #ffffff;
+  color: #fec84b;
+  border: 1px solid #fedf89;
+}
+
 .wd-button--success-primary {
   background: #039855;
   color: #ffffff;
@@ -569,6 +671,57 @@ textarea {
   background: #f6fef9;
   color: #6ce9a6;
   border: 1px solid #f6fef9;
+}
+
+.wd-button--success-tertiary {
+  box-shadow: unset;
+  background: #ffffff;
+  color: #027a48;
+  border: 1px solid #ffffff;
+}
+
+.wd-button--success-tertiary:hover {
+  color: #05603a;
+  background: #ecfdf3;
+  border: 1px solid #ecfdf3;
+}
+
+.wd-button--success-tertiary:focus {
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  outline: 4px solid transparent;
+}
+
+.wd-button--success-tertiary.wd-button--disabled {
+  pointer-events: none;
+  background: #ffffff;
+  color: #6ce9a6;
+  border: 1px solid #ffffff;
+}
+
+.wd-button--success-outline {
+  background: #ffffff;
+  color: #027a48;
+  border: 1px solid #6ce9a6;
+}
+
+.wd-button--success-outline:hover {
+  color: #05603a;
+  background: #ecfdf3;
+  border: 1px solid #6ce9a6;
+}
+
+.wd-button--success-outline:focus {
+  background: #ffffff;
+  border: 1px solid #6ce9a6;
+  outline: 4px solid #d1fadf;
+}
+
+.wd-button--success-outline.wd-button--disabled {
+  pointer-events: none;
+  background: #ffffff;
+  color: #6ce9a6;
+  border: 1px solid #a6f4c5;
 }
 
 .wd-button--sm {
