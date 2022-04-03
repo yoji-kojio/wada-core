@@ -34,11 +34,25 @@ $sizes: (
 
 // Sizes
 @each $size, $config in $sizes {
-  .#{$prefix}-text-#{$size} {
+  .#{$prefix}-text--#{$size} {
     $text-font-size: map-get($config, "font-size");
     $text-line-height: map-get($config, "line-height");
 
     font-size: $text-font-size;
     line-height: $text-line-height;
+  }
+}
+
+// Align
+@each $align in $alignments {
+  .#{$prefix}-text--#{$align} {
+    text-align: $align;
+  }
+}
+
+// Weight
+@each $weight, $value in $weights {
+  .#{$prefix}-text--#{$weight} {
+    font-weight: $value;
   }
 }

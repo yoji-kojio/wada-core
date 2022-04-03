@@ -38,11 +38,25 @@ $sizes: (
 
 // Sizes
 @each $size, $config in $sizes {
-  .#{$prefix}-display-#{$size} {
+  .#{$prefix}-display--#{$size} {
     $display-font-size: map-get($config, "font-size");
     $display-line-height: map-get($config, "line-height");
 
     font-size: $display-font-size;
     line-height: $display-line-height;
+  }
+}
+
+// Align
+@each $align in $alignments {
+  .#{$prefix}-display--#{$align} {
+    text-align: $align;
+  }
+}
+
+// Weight
+@each $weight, $value in $weights {
+  .#{$prefix}-display--#{$weight} {
+    font-weight: $value;
   }
 }
