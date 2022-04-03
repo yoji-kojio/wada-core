@@ -2,30 +2,30 @@
 // Tokens » Spacing
 // ============================================================
 
-$availableSpacing: 1, 2, 3, 4, 5, 6, 8, 10, 12, 16, 20, 24, 32, 40, 48, 56, 64;
-
 // General purpose spacings
-$space-1: rem(4);
-$space-2: rem(8);
-$space-3: rem(12);
-$space-4: rem(16);
-$space-5: rem(20);
-$space-6: rem(24);
-$space-8: rem(32);
-$space-10: rem(40);
-$space-12: rem(48);
-$space-16: rem(64);
-$space-20: rem(80);
-$space-24: rem(96);
-$space-32: rem(128);
-$space-40: rem(160);
-$space-48: rem(192);
-$space-56: rem(224);
-$space-64: rem(256);
+$space-1: rem(4) !default;
+$space-2: rem(8) !default;
+$space-3: rem(12) !default;
+$space-4: rem(16) !default;
+$space-5: rem(20) !default;
+$space-6: rem(24) !default;
+$space-8: rem(32) !default;
+$space-10: rem(40) !default;
+$space-12: rem(48) !default;
+$space-16: rem(64) !default;
+$space-20: rem(80) !default;
+$space-24: rem(96) !default;
+$space-32: rem(128) !default;
+$space-40: rem(160) !default;
+$space-48: rem(192) !default;
+$space-56: rem(224) !default;
+$space-64: rem(256) !default;
 
 // Layout spacing
-$space-xs: 4px;
-$space-sm: 8px;
-$space-md: 16px;
-$space-lg: 24px;
-$pace-xl: 32px;
+$space-xs: 4px !default;
+$space-sm: 8px !default;
+$space-md: 16px !default;
+$space-lg: 24px !default;
+$pace-xl: 32px !default;
+
+$availableSpacing: 1, 2, 3, 4, 5, 6, 8, 10, 12, 16, 20, 24, 32, 40, 48, 56, 64;

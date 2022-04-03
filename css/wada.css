@@ -118,34 +118,82 @@ textarea {
   font-weight: 400;
 }
 
-.wd-display-xs {
+.wd-display--xs {
   font-size: 1.5rem;
   line-height: 2rem;
 }
 
-.wd-display-sm {
+.wd-display--sm {
   font-size: 1.875rem;
   line-height: 2.375rem;
 }
 
-.wd-display-md {
+.wd-display--md {
   font-size: 2.25rem;
   line-height: 2.75rem;
 }
 
-.wd-display-lg {
+.wd-display--lg {
   font-size: 3rem;
   line-height: 3.75rem;
 }
 
-.wd-display-xl {
+.wd-display--xl {
   font-size: 3.75rem;
   line-height: 4.5rem;
 }
 
-.wd-display-2xl {
+.wd-display--2xl {
   font-size: 4.5rem;
   line-height: 5.625rem;
+}
+
+.wd-display--left {
+  text-align: left;
+}
+
+.wd-display--right {
+  text-align: right;
+}
+
+.wd-display--center {
+  text-align: center;
+}
+
+.wd-display--justify {
+  text-align: justify;
+}
+
+.wd-display--justify-all {
+  text-align: justify-all;
+}
+
+.wd-display--start {
+  text-align: start;
+}
+
+.wd-display--end {
+  text-align: end;
+}
+
+.wd-display--match-parent {
+  text-align: match-parent;
+}
+
+.wd-display--regular {
+  font-weight: 400;
+}
+
+.wd-display--medium {
+  font-weight: 500;
+}
+
+.wd-display--semibold {
+  font-weight: 600;
+}
+
+.wd-display--bold {
+  font-weight: 700;
 }
 
 .wd-text {
@@ -155,29 +203,77 @@ textarea {
   font-weight: 400;
 }
 
-.wd-text-xs {
+.wd-text--xs {
   font-size: 0.75rem;
   line-height: 1.125rem;
 }
 
-.wd-text-sm {
+.wd-text--sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
 
-.wd-text-md {
+.wd-text--md {
   font-size: 1rem;
   line-height: 1.5rem;
 }
 
-.wd-text-lg {
+.wd-text--lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
 
-.wd-text-xl {
+.wd-text--xl {
   font-size: 1.25rem;
   line-height: 1.875rem;
+}
+
+.wd-text--left {
+  text-align: left;
+}
+
+.wd-text--right {
+  text-align: right;
+}
+
+.wd-text--center {
+  text-align: center;
+}
+
+.wd-text--justify {
+  text-align: justify;
+}
+
+.wd-text--justify-all {
+  text-align: justify-all;
+}
+
+.wd-text--start {
+  text-align: start;
+}
+
+.wd-text--end {
+  text-align: end;
+}
+
+.wd-text--match-parent {
+  text-align: match-parent;
+}
+
+.wd-text--regular {
+  font-weight: 400;
+}
+
+.wd-text--medium {
+  font-weight: 500;
+}
+
+.wd-text--semibold {
+  font-weight: 600;
+}
+
+.wd-text--bold {
+  font-weight: 700;
 }
 
 .m-1 {

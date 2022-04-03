@@ -9,39 +9,48 @@ $font-family: 'Inter', sans-serif !default;
 // Font Size
 
 // Display
-$display-font-size-2xl: rem(72);
-$display-font-size-xl: rem(60);
-$display-font-size-lg: rem(48);
-$display-font-size-md: rem(36);
-$display-font-size-sm: rem(30);
-$display-font-size-xs: rem(24);
+$display-font-size-2xl: rem(72) !default;
+$display-font-size-xl: rem(60) !default;
+$display-font-size-lg: rem(48) !default;
+$display-font-size-md: rem(36) !default;
+$display-font-size-sm: rem(30) !default;
+$display-font-size-xs: rem(24) !default;
 
 // Text
-$text-font-size-xl: rem(20);
-$text-font-size-lg: rem(18);
-$text-font-size-md: rem(16);
-$text-font-size-sm: rem(14);
-$text-font-size-xs: rem(12);
+$text-font-size-xl: rem(20) !default;
+$text-font-size-lg: rem(18) !default;
+$text-font-size-md: rem(16) !default;
+$text-font-size-sm: rem(14) !default;
+$text-font-size-xs: rem(12) !default;
 
 // Line Height
 
 // Display
-$display-line-height-2xl: rem(90);
-$display-line-height-xl: rem(72);
-$display-line-height-lg: rem(60);
-$display-line-height-md: rem(44);
-$display-line-height-sm: rem(38);
-$display-line-height-xs: rem(32);
+$display-line-height-2xl: rem(90) !default;
+$display-line-height-xl: rem(72) !default;
+$display-line-height-lg: rem(60) !default;
+$display-line-height-md: rem(44) !default;
+$display-line-height-sm: rem(38) !default;
+$display-line-height-xs: rem(32) !default;
 
 // Text
-$text-line-height-xl: rem(30);
-$text-line-height-lg: rem(28);
-$text-line-height-md: rem(24);
-$text-line-height-sm: rem(20);
-$text-line-height-xs: rem(18);
+$text-line-height-xl: rem(30) !default;
+$text-line-height-lg: rem(28) !default;
+$text-line-height-md: rem(24) !default;
+$text-line-height-sm: rem(20) !default;
+$text-line-height-xs: rem(18) !default;
 
 // Font Weight
 $font-weight-regular: 400;
 $font-weight-medium: 500;
 $font-weight-semibold: 600;
 $font-weight-bold: 700;
+
+$weights: (
+  regular: $font-weight-regular,
+  medium: $font-weight-medium,
+  semibold: $font-weight-semibold,
+  bold: $font-weight-bold
+);
+
+$alignments: left, right, center, justify, justify-all, start, end, match-parent;
