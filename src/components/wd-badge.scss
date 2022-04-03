@@ -1,0 +1,81 @@
+$badge-border-radius: 16px !default;
+
+$variant-colors: (
+  gray: (
+    background-color: $gray-50,
+    text-color: $gray-700
+  ),
+  primary: (
+    background-color: $primary-50,
+    text-color: $primary-700
+  ),
+  error: (
+    background-color: $error-50,
+    text-color: $error-700
+  ),
+  warning: (
+    background-color: $warning-50,
+    text-color: $warning-700
+  ),
+  success: (
+    background-color: $success-50,
+    text-color: $success-700
+  ),
+);
+
+$sizes: (
+  sm: (
+    font-size: $text-font-size-xs,
+    line-height: $text-line-height-xs,
+    padding: rem(2) rem(8)
+  ),
+  md: (
+    font-size: $text-font-size-sm,
+    line-height: $text-line-height-sm,
+    padding: rem(2) rem(10)
+  ),
+  lg: (
+    font-size: $text-font-size-md,
+    line-height: $text-line-height-md,
+    padding: rem(4) rem(12)
+  ),
+);
+
+.#{$prefix}-badge {
+  align-items: center;
+  border: none;
+  border-radius: $badge-border-radius;
+  display: flex;
+  font-weight: $font-weight-medium;
+  line-height: $text-line-height-sm;
+  font-size: $text-font-size-sm;
+  padding: rem(2) rem(10);
+  justify-content: center;
+  text-align: center;
+  height: fit-content;
+  width: fit-content;
+}
+
+// Variants
+@each $variant, $config in $variant-colors {
+  $badge-background-color: map-get($config, "background-color");
+  $badge-text-color: map-get($config, "text-color");
+
+  .#{$prefix}-badge--#{$variant} {
+    background-color: $badge-background-color;
+    color: $badge-text-color;
+  }
+}
+
+// Sizes
+@each $size, $config in $sizes {
+  $badge-font-size: map-get($config, "font-size");
+  $badge-line-height: map-get($config, "line-height");
+  $badge-padding: map-get($config, "padding");
+
+  .#{$prefix}-badge--#{$size} {
+    font-size: $badge-font-size;
+    line-height: $badge-line-height;
+    padding: $badge-padding;
+  }
+}

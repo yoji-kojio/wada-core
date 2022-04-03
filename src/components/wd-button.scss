@@ -206,21 +206,21 @@ $sizes: (
 
 // Variants
 @each $variant, $config in $variant-colors {
-  .#{$prefix}-button--#{$variant} {
-    $default-background: map-get($config, "default-background");
-    $default-text-color: map-get($config, "default-text-color");
-    $hover-background-color: map-get($config, "hover-background");
-    $focus-background-color: map-get($config, "focus-background");
-    $disabled-background-color: map-get($config, "disabled-background");
-    $outline-color: map-get($config, "outline-color");
-    $disabled-text-color: map-get($config, "disabled-text-color");
-    $hover-text-color: map-get($config, "hover-text-color");
-    $border-color: map-get($config, "border-color");
-    $hover-border-color: map-get($config, "hover-border-color");
-    $focus-border-color: map-get($config, "focus-border-color");
-    $disabled-border-color: map-get($config, "disabled-border-color");
-    $box-shadow: map-get($config, "box-shadow");
+  $default-background: map-get($config, "default-background");
+  $default-text-color: map-get($config, "default-text-color");
+  $hover-background-color: map-get($config, "hover-background");
+  $focus-background-color: map-get($config, "focus-background");
+  $disabled-background-color: map-get($config, "disabled-background");
+  $outline-color: map-get($config, "outline-color");
+  $disabled-text-color: map-get($config, "disabled-text-color");
+  $hover-text-color: map-get($config, "hover-text-color");
+  $border-color: map-get($config, "border-color");
+  $hover-border-color: map-get($config, "hover-border-color");
+  $focus-border-color: map-get($config, "focus-border-color");
+  $disabled-border-color: map-get($config, "disabled-border-color");
+  $box-shadow: map-get($config, "box-shadow");
 
+  .#{$prefix}-button--#{$variant} {
     @if $box-shadow {
       box-shadow: $box-shadow;
     }
@@ -254,13 +254,12 @@ $sizes: (
 }
 
 // Sizes
-
 @each $size, $config in $sizes {
-  .#{$prefix}-button--#{$size} {
-    $button-font-size: map-get($config, "font-size");
-    $button-line-height: map-get($config, "line-height");
-    $button-padding: map-get($config, "padding");
+  $button-font-size: map-get($config, "font-size");
+  $button-line-height: map-get($config, "line-height");
+  $button-padding: map-get($config, "padding");
 
+  .#{$prefix}-button--#{$size} {
     font-size: $button-font-size;
     line-height: $button-line-height;
     padding: $button-padding;
@@ -268,7 +267,6 @@ $sizes: (
 }
 
 // Behavior
-
 .#{$prefix}-button--block {
   width: 100%;
 }

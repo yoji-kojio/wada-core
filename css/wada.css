@@ -605,6 +605,68 @@ textarea {
   width: 100%;
 }
 
+.wd-badge {
+  align-items: center;
+  border: none;
+  border-radius: 16px;
+  display: flex;
+  font-weight: 500;
+  line-height: 1.25rem;
+  font-size: 0.875rem;
+  padding: 0.125rem 0.625rem;
+  justify-content: center;
+  text-align: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.wd-badge--gray {
+  background-color: #f9fafb;
+  color: #344054;
+}
+
+.wd-badge--primary {
+  background-color: #f9f5ff;
+  color: #6941c6;
+}
+
+.wd-badge--error {
+  background-color: #fef3f2;
+  color: #b42318;
+}
+
+.wd-badge--warning {
+  background-color: #fffaeb;
+  color: #b54708;
+}
+
+.wd-badge--success {
+  background-color: #ecfdf3;
+  color: #027a48;
+}
+
+.wd-badge--sm {
+  font-size: 0.75rem;
+  line-height: 1.125rem;
+  padding: 0.125rem 0.5rem;
+}
+
+.wd-badge--md {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding: 0.125rem 0.625rem;
+}
+
+.wd-badge--lg {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 0.25rem 0.75rem;
+}
+
 .m-1 {
   margin: 0.25rem;
 }
