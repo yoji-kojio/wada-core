@@ -43,8 +43,6 @@ $auto-column-min-width: (
 
 @include mobile {
   @for $i from 1 through $grid-columns {
-    $calculatedWidth: ($i * 100%) / $grid-columns;
-
     .#{$prefix}-col-#{$i}-mobile {
       grid-column-end: span #{$i};
     }
@@ -53,8 +51,6 @@ $auto-column-min-width: (
 
 @include tablet {
   @for $i from 1 through $grid-columns {
-    $calculatedWidth: ($i * 100%) / $grid-columns;
-
     .#{$prefix}-col-#{$i}-tablet {
       grid-column-end: span #{$i};
     }
@@ -63,8 +59,6 @@ $auto-column-min-width: (
 
 @include desktop {
   @for $i from 1 through $grid-columns {
-    $calculatedWidth: ($i * 100%) / $grid-columns;
-
     .#{$prefix}-col-#{$i}-desktop {
       grid-column-end: span #{$i};
     }
@@ -73,8 +67,6 @@ $auto-column-min-width: (
 
 @include desktop-lg {
   @for $i from 1 through $grid-columns {
-    $calculatedWidth: ($i * 100%) / $grid-columns;
-
     .#{$prefix}-col-#{$i}-desktop-lg {
       grid-column-end: span #{$i};
     }

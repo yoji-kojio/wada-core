@@ -3,7 +3,7 @@
 // ============================================================
 
 $container-offset: (2 * $gap) !default;
-$container-max-width: 1344px + (2 * $gap) !default;
+$container-offset-mobile: (2 * $gap-mobile) !default;
 
 @mixin container-style {
   margin: 0 auto;
@@ -24,20 +24,20 @@ $container-max-width: 1344px + (2 * $gap) !default;
 
 .#{$prefix}-container-sm {
   @include container-style;
-  max-width: min($container-sm, $container-max-width) - $container-offset;
+  max-width: $container-sm - $container-offset-mobile;
 }
 
 .#{$prefix}-container-md {
   @include container-style;
-  max-width: min($container-md, $container-max-width) - $container-offset;
+  max-width: $container-md - $container-offset;
 }
 
 .#{$prefix}-container-lg {
   @include container-style;
-  max-width: min($container-lg, $container-max-width) - $container-offset;
+  max-width: $container-lg - $container-offset;
 }
 
 .#{$prefix}-container-xl {
   @include container-style;
-  max-width: min($container-xl, $container-max-width) - $container-offset;
+  max-width: $container-xl - $container-offset;
 }
